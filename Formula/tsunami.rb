@@ -5,21 +5,21 @@
 class Tsunami < Formula
   desc "HTTP load testing CLI tool"
   homepage "https://github.com/paniccaaa/tsunami"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.1/tsunami_0.1.1_darwin_amd64.tar.gz"
-      sha256 "0c41f23203c0e3a66c82397e67a316aa6c18b36921a36f6ed074b365b80647fa"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_darwin_amd64.tar.gz"
+      sha256 "1ac580aa3ed01f9a101704ee103dcaea1e10cd53cab45a3563b00a898ca2b702"
 
       def install
         bin.install "tsunami"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.1/tsunami_0.1.1_darwin_arm64.tar.gz"
-      sha256 "3e954d2d8aa7e3916cde5e1dff9de90b992bbe57d9bdb772585aa2939c4c1c9f"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_darwin_arm64.tar.gz"
+      sha256 "abdd03be631e80b0f0c1f7253182ddf6f0243ef668e74b0a034c9d035bc2cb29"
 
       def install
         bin.install "tsunami"
@@ -29,15 +29,15 @@ class Tsunami < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.1/tsunami_0.1.1_linux_amd64.tar.gz"
-      sha256 "a231574b27e046fc182b9339e6fb001f64232da108276e0d489ab8a90e288bf8"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_linux_amd64.tar.gz"
+      sha256 "595b7b473ad293637999b63dcbecb4685bc9b7d5193dc0f621fedf496c8af5d9"
       def install
         bin.install "tsunami"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.1/tsunami_0.1.1_linux_arm64.tar.gz"
-      sha256 "f5cc8e521a18039e616e7cd08a91dfa0acedc724e4a01345e51f30f97121c40c"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_linux_arm64.tar.gz"
+      sha256 "5d4381f809e328b65fa31d5ad63bbff9144ce9fda3f0b7643ca96ca3030fb106"
       def install
         bin.install "tsunami"
       end
