@@ -5,23 +5,23 @@
 class Tsunami < Formula
   desc "HTTP load testing CLI tool"
   homepage "https://github.com/paniccaaa/tsunami"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_darwin_amd64.tar.gz"
-      sha256 "1ac580aa3ed01f9a101704ee103dcaea1e10cd53cab45a3563b00a898ca2b702"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_darwin_amd64.tar.gz"
+      sha256 "16d0449bea478ddbfbc39906b8b576a00341640e7967b317708efb15f334e7ac"
 
-      def install
+      define_method(:install) do
         bin.install "tsunami"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_darwin_arm64.tar.gz"
-      sha256 "abdd03be631e80b0f0c1f7253182ddf6f0243ef668e74b0a034c9d035bc2cb29"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_darwin_arm64.tar.gz"
+      sha256 "218a3ddb0f6a20407dd79af04f90dfa18e930d826343ab429fc0e17d4e4244b2"
 
-      def install
+      define_method(:install) do
         bin.install "tsunami"
       end
     end
@@ -29,16 +29,16 @@ class Tsunami < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_linux_amd64.tar.gz"
-      sha256 "595b7b473ad293637999b63dcbecb4685bc9b7d5193dc0f621fedf496c8af5d9"
-      def install
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_linux_amd64.tar.gz"
+      sha256 "36fd1ac9675b6d743907a99500b78a729334067588d3731954f3c71468307850"
+      define_method(:install) do
         bin.install "tsunami"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.2/tsunami_0.1.2_linux_arm64.tar.gz"
-      sha256 "5d4381f809e328b65fa31d5ad63bbff9144ce9fda3f0b7643ca96ca3030fb106"
-      def install
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_linux_arm64.tar.gz"
+      sha256 "208c14fd3cc57d5cde63dc940d3df6131b9ed554886edf50363e47ad3ada5659"
+      define_method(:install) do
         bin.install "tsunami"
       end
     end
