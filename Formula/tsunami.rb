@@ -5,21 +5,21 @@
 class Tsunami < Formula
   desc "HTTP load testing CLI tool"
   homepage "https://github.com/paniccaaa/tsunami"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_darwin_amd64.tar.gz"
-      sha256 "16d0449bea478ddbfbc39906b8b576a00341640e7967b317708efb15f334e7ac"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.4/tsunami_0.1.4_darwin_amd64.tar.gz"
+      sha256 "d761ad494e947c3fea706a07808d8d4cd3a299eb5819f3e1d869db3e8234c79a"
 
       define_method(:install) do
         bin.install "tsunami"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_darwin_arm64.tar.gz"
-      sha256 "218a3ddb0f6a20407dd79af04f90dfa18e930d826343ab429fc0e17d4e4244b2"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.4/tsunami_0.1.4_darwin_arm64.tar.gz"
+      sha256 "6c8b9be45f77682f23744b3be067e9552f357967fe6d5693fc546de7d2932a0c"
 
       define_method(:install) do
         bin.install "tsunami"
@@ -29,15 +29,15 @@ class Tsunami < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_linux_amd64.tar.gz"
-      sha256 "36fd1ac9675b6d743907a99500b78a729334067588d3731954f3c71468307850"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.4/tsunami_0.1.4_linux_amd64.tar.gz"
+      sha256 "2a1a9799242d963180c92863a6378a392ea1f58cab551ad0d91c245db52c4e7b"
       define_method(:install) do
         bin.install "tsunami"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.3/tsunami_0.1.3_linux_arm64.tar.gz"
-      sha256 "208c14fd3cc57d5cde63dc940d3df6131b9ed554886edf50363e47ad3ada5659"
+      url "https://github.com/paniccaaa/tsunami/releases/download/v0.1.4/tsunami_0.1.4_linux_arm64.tar.gz"
+      sha256 "de5a5e68921a79d56f073781df64810d7da5ef1e5d8e7316006e5566b2f0dc08"
       define_method(:install) do
         bin.install "tsunami"
       end
